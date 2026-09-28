@@ -18,8 +18,7 @@ mihir-portfolio/
 ├── index.html              # Vite entry HTML
 ├── package.json
 ├── vite.config.js
-├── public/
-│   ├── assets/              # put Mihirrathod_Resume.pdf here
+├── assets/              # put Mihirrathod_Resume.pdf here
 │   └── certificates/        # put your cert PDFs here
 └── src/
     ├── main.jsx
