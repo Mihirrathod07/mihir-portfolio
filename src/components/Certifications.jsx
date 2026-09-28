@@ -1,8 +1,8 @@
 const CERTS = [
-  { name: 'Introduction to Cybersecurity', org: 'Cisco Networking Academy', file: '/public/certificates/cisco-cybersecurity.pdf' },
-  { name: 'Cybersecurity Job Simulation', org: 'Deloitte Australia — Forage', file: '/public/certificates/Deloitte.pdf' },
-  { name: 'Certified Cybersecurity Educator (CCEP)', org: 'Redteamleaders', file: '/public/certificates/certified_certificate.pdf' },
-  { name: 'Cybersecurity Internship Certificate', org: 'Shadowfox — Dec 2025', file: '/public/certificates/Mihir Rathod_Shadowfox_complate.pdf' },
+  { name: 'Introduction to Cybersecurity', org: 'Cisco Networking Academy', file: '/certificates/cisco-cybersecurity.pdf' },
+  { name: 'Cybersecurity Job Simulation', org: 'Deloitte Australia — Forage', file: '/certificates/Deloitte.pdf' },
+  { name: 'Certified Cybersecurity Educator (CCEP)', org: 'Redteamleaders', file: '/certificates/certified_certificate.pdf' },
+  { name: 'Cybersecurity Internship Certificate', org: 'Shadowfox — Dec 2025', file: '/certificates/Mihir Rathod_Shadowfox_complate.pdf' },
 ]
 
 export default function Certifications() {

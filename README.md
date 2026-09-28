@@ -40,8 +40,8 @@ mihir-portfolio/
 
 ## Adding your files
 
-- Drop your resume PDF into `public/assets/Mihirrathod_Resume.pdf`
-- Drop certificate PDFs into `public/certificates/`
+- Drop your resume PDF into `/assets/Mihirrathod_Resume.pdf`
+- Drop certificate PDFs into `/certificates/`
 - Edit content directly inside each component file in `src/components/`
 
 ## Deploy

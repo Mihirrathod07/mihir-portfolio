@@ -1,12 +1,70 @@
 const CATEGORIES = [
-  { title: 'Offensive Security', count: '05', tags: ['Kali Linux', 'Burp Suite', 'Metasploit', 'John the Ripper', 'Zphisher'] },
-  { title: 'Network & Recon', count: '05', tags: ['Nmap', 'Wireshark', 'OSINT', 'Dorking', 'ExifTool'] },
-  { title: 'SOC & Monitoring', count: '05', tags: ['Splunk', 'Wazuh', 'SIEM', 'Log Analysis', 'IDS/IPS'] },
-  { title: 'Development', count: '05', tags: ['Python', 'Streamlit', 'React.js', 'Next.js', 'MERN Stack'] },
-  { title: 'Specializations', count: '05', tags: ['Pen Testing', 'VAPT', 'CTF', 'Threat Intel', 'Incident Response'] },
-  { title: 'Soft Skills', count: '04', tags: ['Report Writing', 'Security Research', 'Team Collaboration', 'Problem Solving'] },
+  {
+    title: 'Offensive Security',
+    count: '05',
+    tags: [
+      'Kali Linux',
+      'Burp Suite',
+      'Metasploit',
+      'SQLMap',
+      'OWASP Testing'
+    ]
+  },
+  {
+    title: 'Network & Recon',
+    count: '05',
+    tags: [
+      'Nmap',
+      'Wireshark',
+      'OSINT',
+      'Dorking',
+      'ExifTool'
+    ]
+  },
+  {
+    title: 'Bug Bounty',
+    count: '05',
+    tags: [
+      'Web Reconnaissance',
+      'Subdomain Enumeration',
+      'Vulnerability Discovery',
+      'API Security Testing',
+      'Responsible Disclosure'
+    ]
+  },
+  {
+    title: 'Development',
+    count: '05',
+    tags: [
+      'Python',
+      'Streamlit',
+      'React.js',
+      'Next.js',
+      'MERN Stack'
+    ]
+  },
+  {
+    title: 'Specializations',
+    count: '05',
+    tags: [
+      'Penetration Testing',
+      'VAPT',
+      'Web Security',
+      'Threat Intelligence',
+      'Security Research'
+    ]
+  },
+  {
+    title: 'Soft Skills',
+    count: '04',
+    tags: [
+      'Report Writing',
+      'Security Research',
+      'Team Collaboration',
+      'Problem Solving'
+    ]
+  },
 ]
-
 export default function Skills() {
   return (
     <section id="skills">

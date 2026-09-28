@@ -20,8 +20,7 @@ export default function About() {
               systems work — and how they can be broken.
             </p>
             <p style={{ color: 'var(--muted)', marginBottom: 16 }}>
-              I specialize in OSINT, penetration testing, vulnerability assessment, and security monitoring
-              using industry-standard tools. I enjoy building security tools that solve real-world problems.
+              I specialize in OSINT, penetration testing, vulnerability assessment, and bug hunting, leveraging industry-standard tools. I enjoy building security tools that solve real-world problems.
             </p>
             <div className="timeline">
               {TIMELINE.map((t) => (
@@ -45,10 +44,11 @@ export default function About() {
               &nbsp;&nbsp;<span className="k">"prev_degree"</span>: <span className="s">"B.Tech IT"</span>,<br />
               &nbsp;&nbsp;<span className="k">"email"</span>: <span className="s">"mihir8716@gmail.com"</span>,<br />
               &nbsp;&nbsp;<span className="k">"focus"</span>: [<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;<span className="s">"Ethical Hacking"</span>,<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;<span className="s">"OSINT"</span>,<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span className="s">"Vulnerability Assessment"</span>,<br />
               &nbsp;&nbsp;&nbsp;&nbsp;<span className="s">"Penetration Testing"</span>,<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;<span className="s">"SOC Analyst"</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span className="s">"Ethical Hacking"</span>,<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span className="s">"Bug Hunting"</span><br />
+              &nbsp;&nbsp;&nbsp;&nbsp;<span className="s">"OSINT"</span>,<br />
               &nbsp;&nbsp;],<br />
               &nbsp;&nbsp;<span className="k">"status"</span>: <span className="s">"Available for opportunities"</span><br />
               {'}'}<br />

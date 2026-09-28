@@ -11,113 +11,62 @@ const ASCII_ART = [
 const RESUME_PATH = '/assets/Mihirrathod_Resume.pdf'
 
 const COMMANDS = {
-  help: () => [
-    'Available commands:',
-    '  whoami        — quick profile summary',
-    '  about         — background & focus areas',
-    '  skills        — tools & specializations',
-    '  experience    — internship history',
-    '  education     — academic background',
-    '  projects      — featured work',
-    '  certs         — certifications',
-    '  contact       — get in touch',
-    '  resume        — download my resume (PDF)',
-    '  nmap          — scan this host',
-    '  sudo hire mihir — you know what to do',
-    '  clear         — clear the screen',
-  ],
+help: () => [
+  'Available commands:',
+  '  whoami       — profile',
+  '  skills       — core skills',
+  '  projects     — featured work',
+  '  experience   — experience',
+  '  contact      — contact details',
+  '  resume       — download resume',
+  '  open <name>  — launch project',
+  '  nmap         — scan this host',
+  '  sudo hire mihir — you know what to do',
+  '  clear        — clear terminal',
+],
+
   whoami: () => [
     'mihir_rathod — VAPT / Penetration Tester',
-    'Location: Ahmedabad, India',
-    'M.Tech Cybersecurity @ Indus University (2025 – Present)',
-    'Currently: VAPT Intern @ Selkey CyberSecurity',
-    'Email: mihir8716@gmail.com  |  Phone: +91 97122 12242',
-    'Focus: Web App Pentesting · OWASP Top 10 · OSINT · SOC',
-    'Languages: English, Hindi, Gujarati',
+    'M.Tech Cybersecurity @ Indus University',
+    'VAPT Intern @ Selkey Cyber Security',
+    'Focus: Web Security · API Security · Bug Hunting',
   ],
-  about: () => [
-    'M.Tech Cybersecurity student with hands-on experience in',
-    'Web Application Penetration Testing (VAPT) through',
-    'internships and practical security projects.',
-    '',
-    'Proficient in OWASP Top 10 testing using Burp Suite, Nmap,',
-    'OWASP ZAP, SQLMap, and Kali Linux. Built VulnProbe,',
-    'PhantomEye, and CipherGuard from the ground up.',
-    '',
-    'Soft skills: Analytical Thinking · Problem Solving ·',
-    'Attention to Detail · Team Collaboration',
-    '',
-    'Interests: Web App Security · Bug Hunting · Threat',
-    'Research · OSINT',
-    '',
-    'Currently seeking an entry-level VAPT / Penetration',
-    'Tester role.',
-  ],
+
   skills: () => [
-    'Web App Security:',
-    '  VAPT, OWASP Top 10, API Security Testing,',
-    '  Authentication/Authorization Testing, CVSS Risk Scoring',
-    '',
-    'Security Tools:',
-    '  Burp Suite, OWASP ZAP, Nmap, SQLMap, Metasploit,',
-    '  Nuclei, Gobuster, Subfinder, Wireshark, Kali Linux',
-    '',
-    'Vulnerability Testing:',
-    '  SQL Injection (SQLi), XSS, CSRF, IDOR,',
-    '  Security Misconfiguration, Directory Enum, Port Scanning',
-    '',
-    'Programming & Tech:',
-    '  Python, JavaScript, HTML, CSS, Flask, MongoDB,',
-    '  REST APIs, Git, Linux',
-    '',
-    'OSINT & Recon:',
-    '  WHOIS, DNS Enumeration, AbuseIPDB, VirusTotal,',
-    '  Email Reconnaissance, Username Enumeration',
+    'VAPT · OWASP Top 10 · API Security',
+    'Burp Suite · Nmap · SQLMap · Kali Linux',
+    'Python · FastAPI · Flask · React.js',
+    'OSINT · Recon · Web Security',
   ],
+
   experience: () => [
     'Selkey Cyber Security — VAPT Intern',
-    '  Jul 2026 – Present',
-    '  Manual + automated web app pentesting (OWASP Top 10),',
-    '  found & documented SQLi/XSS/IDOR/CSRF, wrote VAPT',
-    '  reports with PoC + CVSS v3.1 ratings.',
+    'Jul 2026 – Present',
     '',
     'ShadowFox — Cybersecurity Intern',
-    '  Dec 2025 – Jan 2026',
-    '  Vuln assessments with Burp Suite, SQLMap, Nmap;',
-    '  network recon & traffic analysis with Wireshark.',
+    'Dec 2025 – Jan 2026',
     '',
     'SoftEdge Infotech — Frontend Developer Intern',
-    '  Jan 2024 – Jun 2024',
-    '  Built responsive apps with React.js, integrated REST',
-    '  APIs, learned auth flows & client-side security.',
+    'Jan 2024 – Jun 2024',
   ],
-  education: () => [
-    'Indus University, Ahmedabad',
-    '  M.Tech in Cybersecurity (Pursuing) · 2025 – Present',
-    '',
-    'Indus University, Ahmedabad',
-    '  B.Tech in Information Technology · 2020 – 2024',
-  ],
+
   projects: () => [
-    '01 PhantomEye   — OSINT intel platform (12+ modules)',
-    '02 VulnProbe    — automated web vuln scanner',
-    '03 CipherGuard  — password security analyzer',
-    '04 Proginter    — domain service platform',
-    "Type 'open <name>' e.g. 'open phantomeye' to launch.",
+    '01 ApiShield   — API security & VAPT',
+    '02 PhantomEye  — OSINT intelligence',
+    '03 VulnProbe   — web vulnerability scanner',
+    '04 CipherGuard — password security',
+    '05 Proginter   — domain service platform',
+    '',
+    "Use 'open <name>' to launch.",
   ],
-  certs: () => [
-    '[✓] Cybersecurity Job Simulation — Deloitte (Forage)',
-    '[✓] Cybersecurity Fundamentals — IBM',
-    '[✓] Introduction to Cybersecurity — Cisco Networking Academy',
-    '[✓] Certified Cybersecurity Educator Professional (CCEP)',
-  ],
+
   contact: () => [
-    'email: mihir8716@gmail.com',
-    'github: github.com/Mihirrathod07',
-    'linkedin: linkedin.com/in/mihir-rathod',
-    'phone: +91 97122 12242',
-    'location: Ahmedabad, India',
+    'Email: mihir8716@gmail.com',
+    'GitHub: github.com/Mihirrathod07',
+    'LinkedIn: linkedin.com/in/mihir-rathod',
+    'Location: Ahmedabad, India',
   ],
+
   resume: () => {
     const link = document.createElement('a')
     link.href = RESUME_PATH
@@ -125,9 +74,11 @@ const COMMANDS = {
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
-    return ['Downloading Mihirrathod_Resume.pdf ...', 'If nothing happens, check your browser\'s download prompt.']
+
+    return ['Downloading resume...']
   },
-  nmap: () => [
+
+ nmap: () => [
     'Starting Nmap scan on mihir.rathod...',
     'PORT     STATE  SERVICE',
     '22/tcp   open   ssh',
@@ -135,9 +86,11 @@ const COMMANDS = {
     '443/tcp  open   secure-comms',
     'Host is up. All ports secured.',
   ],
+
 }
 
 const PROJECT_LINKS = {
+  apishield: 'https://apishield-vews.onrender.com/',
   phantomeye: 'https://phantomeye.onrender.com/',
   vulnprobe: 'https://vulnprobe.onrender.com/',
   cipherguard: 'https://cipherguard-ik69.onrender.com/',

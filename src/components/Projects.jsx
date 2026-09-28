@@ -2,49 +2,105 @@ const PROJECTS = [
   {
     id: 'PROJECT-001',
     status: 'ACTIVE',
-    category: 'OSINT Framework',
-    title: 'PhantomEye — OSINT Intelligence Platform',
-    desc: 'A full-featured OSINT framework with a unified dashboard and 12+ recon modules. Built for ethical security research, penetration testing, and threat intelligence gathering — all from a single interface.',
+    category: 'API Security',
+    title: 'ApiShield — API Security & VAPT Platform',
+    desc: 'A full-stack API security testing platform built with FastAPI and React that automates OWASP API Top 10 checks, endpoint discovery, authentication testing, and BOLA/IDOR detection using dual-user authorization testing.',
     modsLabel: '// Modules',
-    mods: ['Dashboard', 'Username Lookup', 'IP / Domain', 'Email Intel', 'Metadata', 'Phone Dork Gen', 'Hash ID', 'WHOIS', 'DNS Lookup', 'Risk Score'],
-    demo: 'https://phantomeye.onrender.com/',
-    github: 'https://github.com/Mihirrathod07/Phantomeye.git',
+    mods: [
+      'OWASP API Top 10',
+      'Endpoint Discovery',
+      'OpenAPI Import',
+      'BOLA / IDOR Testing',
+      'JWT Authentication',
+      'Rate Limit Testing',
+      'Credential Encryption',
+      'Vulnerability Reports'
+    ],
+    demo: 'https://apishield-vews.onrender.com/',
+    github: 'https://github.com/Mihirrathod07/',
   },
+
   {
     id: 'PROJECT-002',
     status: 'ACTIVE',
-    category: 'VAPT Tool',
-    title: 'VulnProbe — Web Vulnerability Scanner',
-    desc: 'An automated web vulnerability assessment platform with 8 scanning modules. Detects OWASP Top 10 vulnerabilities, maps findings to real CVEs, and generates professional PDF reports with a real-time risk scoring engine (0–100).',
+    category: 'OSINT Framework',
+    title: 'PhantomEye — OSINT Intelligence Platform',
+    desc: 'An OSINT reconnaissance platform with 12 integrated modules for automated information gathering, including WHOIS/DNS lookup, email intelligence, username enumeration, IP reputation analysis, and bulk IP scanning.',
     modsLabel: '// Modules',
-    mods: ['Port Scanner', 'SQL Injection', 'XSS Scanner', 'Security Headers', 'Directory Enum', 'Subdomain Enum', 'CVE Intelligence', 'PDF Reports'],
-    demo: 'https://vulnprobe.onrender.com/',
-    github: 'https://github.com/Mihirrathod07/VulnProbe',
+    mods: [
+      'WHOIS / DNS',
+      'Username Lookup',
+      'Email Intelligence',
+      'IP Reputation',
+      'Metadata',
+      'Phone Lookup',
+      'Hash Identifier',
+      'Dork Generator',
+      'Bulk IP Scan',
+      'Risk Analysis'
+    ],
+    demo: 'https://phantomeye.onrender.com/',
+    github: 'https://github.com/Mihirrathod07/Phantomeye.git',
   },
+
   {
     id: 'PROJECT-003',
     status: 'ACTIVE',
+    category: 'VAPT Tool',
+    title: 'VulnProbe — Web Vulnerability Scanner',
+    desc: 'A Flask-based automated web vulnerability scanner covering port scanning, security headers, SQL injection, XSS, directory enumeration, subdomain discovery, and CVE-based vulnerability detection with automated reports.',
+    modsLabel: '// Modules',
+    mods: [
+      'Port Scanner',
+      'SQL Injection',
+      'XSS Scanner',
+      'Security Headers',
+      'Directory Enum',
+      'Subdomain Enum',
+      'CVE Detection',
+      'PDF Reports'
+    ],
+    demo: 'https://vulnprobe.onrender.com/',
+    github: 'https://github.com/Mihirrathod07/VulnProbe',
+  },
+
+  {
+    id: 'PROJECT-004',
+    status: 'ACTIVE',
     category: 'Security Tool',
     title: 'CipherGuard — Password Security Analyzer',
-    desc: 'A cybersecurity web tool that performs real-time password strength analysis, breach detection against 10B+ leaked passwords, crack time estimation across 3 attack scenarios, and secure password generation.',
+    desc: 'A password security analyzer that evaluates password strength, estimates brute-force crack time, generates secure passwords, and checks compromised credentials through the Have I Been Pwned API.',
     modsLabel: '// Features',
-    mods: ['Real-time Analysis', 'Breach Detection', 'Crack Time Estimator', 'Entropy Calculator', 'Flask Backend'],
+    mods: [
+      'Strength Analysis',
+      'Entropy Analysis',
+      'Crack Time',
+      'Password Generator',
+      'Breach Detection'
+    ],
     demo: 'https://cipherguard-ik69.onrender.com/',
     github: 'https://github.com/Mihirrathod07/CipherGuard-',
   },
+
   {
-    id: 'PROJECT-004',
+    id: 'PROJECT-005',
     status: 'INTERNSHIP',
     category: 'Full Stack',
     title: 'Proginter — Domain Service Platform',
-    desc: 'A full-stack domain registration and management platform built during an internship at Softedge InfoTech. Users can search, register, and manage domain names through a REST API backend.',
+    desc: 'A full-stack domain registration and management platform developed during an internship at Softedge InfoTech, featuring domain search, registration workflows, and REST API integration.',
     modsLabel: '// Tech Stack',
-    mods: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'Next.js', 'REST API'],
+    mods: [
+      'MongoDB',
+      'Express.js',
+      'React.js',
+      'Node.js',
+      'Next.js',
+      'REST API'
+    ],
     demo: null,
     github: 'https://github.com/Mihirrathod07',
   },
 ]
-
 export default function Projects() {
   return (
     <section id="projects">
